@@ -9,9 +9,22 @@ app = Flask(__name__)
 #client_id = config.client_id
 
 @app.route('/')
+@app.route('/index')
 def home():
     return render_template('home.html')
 
+@app.route('/add')
+def add():
+    return "hello world"
+    
+@app.route('/queue')
+def queue():
+    return "hello world"
+    
+@app.route('/recent')
+def recent():
+    return "hello world"
+    
 def addTrackToPlaylist(token, user, playlist_id, track_id, position):
     track = 'spotify:track:' + track_id
     auth = 'Bearer' + token
