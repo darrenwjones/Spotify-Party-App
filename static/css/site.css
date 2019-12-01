@@ -37,6 +37,13 @@ body {
     height: 100px;
 }
 
+.queue {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
 .container .search {
     position: absolute;
     margin: auto;
